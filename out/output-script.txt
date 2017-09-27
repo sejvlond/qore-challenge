@@ -1,0 +1,30 @@
+[~/qore-challenge/src] $ qore import.q
+[2017-09-27 06:33:58.678][INFO]: Starting the script...
+[2017-09-27 06:33:58.678][INFO]: Parsing csv file './example-products.csv'
+[2017-09-27 06:33:58.684][WARN]: More customers with same ids but different data. Id: 913483; Data 1: {<Customer object>: id: null, num: 913483, name: "Phones For ME, Ltd"}; Data 2: {<Customer object>: id: null, num: 913483, name: "Phones For Me, Limited"};
+[2017-09-27 06:33:58.684][WARN]: More customers with same ids but different data. Id: 913483; Data 1: {<Customer object>: id: null, num: 913483, name: "Phones For ME, Ltd"}; Data 2: {<Customer object>: id: null, num: 913483, name: "Phones For Me, Limited"};
+[2017-09-27 06:33:58.689][WARN]: More customers with same ids but different data. Id: 913483; Data 1: {<Customer object>: id: null, num: 913483, name: "Phones For ME, Ltd"}; Data 2: {<Customer object>: id: null, num: 913483, name: "Phones For Me, Limited"};
+[2017-09-27 06:33:58.690][DEBUG]: CSV parsed successfully: customers amount: 3, inventory amount: 14
+[2017-09-27 06:33:58.690][INFO]: Inserting to DB 'pgsql:postgres/***@qore'
+[2017-09-27 06:33:58.690][DEBUG]: Filling customers data
+[2017-09-27 06:33:58.822][DEBUG]: Inserted customer: {cust_id: 77, cust_num: 913483, cust_name: "Phones For Me, Limited"}
+[2017-09-27 06:33:58.823][DEBUG]: Inserted customer: {cust_id: 78, cust_num: 100464, cust_name: "Prima A1 Ltd"}
+[2017-09-27 06:33:58.824][DEBUG]: Inserted customer: {cust_id: 79, cust_num: 913481, cust_name: "The Cellphone Station, Ltd"}
+[2017-09-27 06:33:58.824][DEBUG]: Filling inventory data
+[2017-09-27 06:33:58.834][DEBUG]: Inserted inventory: {inventory_id: 57, cust_id: 77, filename: "example-products.csv", part_code: 12033, description: "NOK X3-02 GSM GRAPHITE", delivery_date: 2015-05-10 00:00:00.000000 Sun Z (UTC), order_reference: "XPPU_10_05_2015"}
+[2017-09-27 06:33:58.835][DEBUG]: Inserted inventory: {inventory_id: 58, cust_id: 78, filename: "example-products.csv", part_code: 12037, description: "SAM Galaxy S II", delivery_date: 2015-05-10 00:00:00.000000 Sun Z (UTC), order_reference: "XA1C_10_05_2015"}
+[2017-09-27 06:33:58.836][DEBUG]: Inserted inventory: {inventory_id: 59, cust_id: 79, filename: "example-products.csv", part_code: 12025, description: "SAMSUNG GALAXY TAB 7 INCH ANDROID 1 GHZ 16GB", delivery_date: 2014-11-11 00:00:00.000000 Tue Z (UTC), order_reference: "XCPW_11_11_2014"}
+[2017-09-27 06:33:58.837][DEBUG]: Inserted inventory: {inventory_id: 60, cust_id: 77, filename: "example-products.csv", part_code: 12017, description: "BlackBerry 9300 Curve", delivery_date: 2015-04-14 00:00:00.000000 Tue Z (UTC), order_reference: "XPPU_14_04_2015"}
+[2017-09-27 06:33:58.838][DEBUG]: Inserted inventory: {inventory_id: 61, cust_id: 79, filename: "example-products.csv", part_code: 12021, description: "BlackBerry 9780 Black", delivery_date: 2015-03-28 00:00:00.000000 Sat Z (UTC), order_reference: "XCPW_28_03_2015"}
+[2017-09-27 06:33:58.839][DEBUG]: Inserted inventory: {inventory_id: 62, cust_id: 77, filename: "example-products.csv", part_code: 12021, description: "BlackBerry 9780 Black", delivery_date: 2015-04-26 00:00:00.000000 Sun Z (UTC), order_reference: "XPPU_26_04_2015"}
+[2017-09-27 06:33:58.840][DEBUG]: Inserted inventory: {inventory_id: 63, cust_id: 79, filename: "example-products.csv", part_code: 10923, description: "Nokia 2730 Black", delivery_date: 2015-04-04 00:00:00.000000 Sat Z (UTC), order_reference: "XCPW_04_04_2015"}
+[2017-09-27 06:33:58.841][DEBUG]: Inserted inventory: {inventory_id: 64, cust_id: 79, filename: "example-products.csv", part_code: 12026, description: "Samsung i9000 (16GB) Black Ref", delivery_date: 2015-04-14 00:00:00.000000 Tue Z (UTC), order_reference: "XCPW_14_04_2015"}
+[2017-09-27 06:33:58.842][DEBUG]: Inserted inventory: {inventory_id: 65, cust_id: 79, filename: "example-products.csv", part_code: 12022, description: "BlackBerry 9800 Black", delivery_date: 2015-04-05 00:00:00.000000 Sun Z (UTC), order_reference: "XCPW_05_04_2015"}
+[2017-09-27 06:33:58.843][DEBUG]: Inserted inventory: {inventory_id: 66, cust_id: 77, filename: "example-products.csv", part_code: 12027, description: "Nokia E7", delivery_date: 2015-05-03 00:00:00.000000 Sun Z (UTC), order_reference: "XPPU_03_05_2015"}
+[2017-09-27 06:33:58.844][DEBUG]: Inserted inventory: {inventory_id: 67, cust_id: 79, filename: "example-products.csv", part_code: 12027, description: "Nokia E7", delivery_date: 2015-05-08 00:00:00.000000 Fri Z (UTC), order_reference: "XCPW_08_05_2015"}
+[2017-09-27 06:33:58.845][DEBUG]: Inserted inventory: {inventory_id: 68, cust_id: 79, filename: "example-products.csv", part_code: 10910, description: "Nokia 6700 Black", delivery_date: 2015-04-04 00:00:00.000000 Sat Z (UTC), order_reference: "XCPW_04_04_2015"}
+[2017-09-27 06:33:58.846][DEBUG]: Inserted inventory: {inventory_id: 69, cust_id: 79, filename: "example-products.csv", part_code: 12029, description: "Samsung Galaxy Ace S5830 Black", delivery_date: 2015-04-09 00:00:00.000000 Thu Z (UTC), order_reference: "XCPW_09_04_2015"}
+[2017-09-27 06:33:58.847][DEBUG]: Inserted inventory: {inventory_id: 70, cust_id: 79, filename: "example-products.csv", part_code: 12017, description: "BlackBerry 9300 Curve", delivery_date: 2015-04-13 00:00:00.000000 Mon Z (UTC), order_reference: "XCPW_13_04_2015"}
+[2017-09-27 06:33:58.847][INFO]: Committing the transaction
+[2017-09-27 06:33:58.851][DEBUG]: Successfully inserted into database
+[2017-09-27 06:33:58.851][INFO]: Script finished
